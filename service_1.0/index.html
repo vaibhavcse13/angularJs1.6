@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="BasicService">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Serivice </title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js" data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <p>Hello {{name}}!</p>
+    
+    <table border="1px" style="width:400px">
+      <tr>
+        <th>Product Id </th>
+        <th>Product Name </th>
+        <th>Price </th>
+        
+      </tr>
+      <tr ng-repeat="data in products">
+        <td>{{data.pid}}</td>
+         <td>{{data.name}}</td>
+         <td>{{data.price}}</td>
+          
+      </tr>
+    </table> 
+    
+    
+    <button add-prod>Add Book</button>
+  </body>
+
+</html>
