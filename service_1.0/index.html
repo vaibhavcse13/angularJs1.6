@@ -12,7 +12,13 @@
 
   <body ng-controller="MainCtrl">
     <p>Hello {{name}}!</p>
-    
+    <div>
+      
+      <input type="text" placeholder="Product Id  "ng-model="product.pid" id="pid">
+      <input type="text" placeholder="Product Name "ng-model="product.name" id="name">
+      <input type="text" placeholder="Price "ng-model="product.price" id="price">
+      <button add-prod prod="product">Add Book</button>
+    </div>
     <table border="1px" style="width:400px">
       <tr>
         <th>Product Id </th>
@@ -29,7 +35,7 @@
     </table> 
     
     
-    <button add-prod>Add Book</button>
+   
   </body>
 
 </html>

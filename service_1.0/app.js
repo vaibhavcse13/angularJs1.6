@@ -29,9 +29,11 @@ app.directive('addProd' , ['Product' , function(Product){
   
   return {
     restrict : "A" ,
+    scope : {prod : '='}, 
     link : function(scope, element, attrs){
       element.bind("click" , function(){
-        Product.addProduct({id : 3  ,  name : "XXXXX" , price : 20000})
+        Product.addProduct({pid:3 , name :"XXXXXXXXX" , price: 2000});
+        scope.$apply();
       })
       
     }
